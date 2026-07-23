@@ -1,0 +1,9 @@
+Package: linux-toolbox
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: IAK
+Description: Linux Toolbox
+ A simple Linux command reference and toolbox application.
+

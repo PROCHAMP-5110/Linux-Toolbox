@@ -1,0 +1,9 @@
+[Application]
+name=com.prochamp.LinuxToolbox
+runtime=org.gnome.Platform/x86_64/48
+sdk=org.gnome.Sdk/x86_64/48
+command=linux-toolbox
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;

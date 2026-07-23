@@ -1,0 +1,32 @@
+{
+  "id" : "com.prochamp.LinuxToolbox",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "48",
+  "runtime-commit" : "0ebc10e5cc1fbe0836505fa203d75902606bcd4763c2c3cb0678795690dc506c",
+  "sdk" : "org.gnome.Sdk",
+  "sdk-commit" : "0fcaf52dcc423b664be691b4cba681c8de25849bbf231ca69da9e2b03605b42e",
+  "command" : "linux-toolbox",
+  "modules" : [
+    {
+      "name" : "linux-toolbox",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "..",
+          "type" : "dir"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm755 linux_toolbox.py /app/bin/linux-toolbox",
+        "install -Dm644 com.prochamp.LinuxToolbox.desktop /app/share/applications/com.prochamp.LinuxToolbox.desktop",
+        "install -Dm644 linux-toolbox.png /app/share/icons/hicolor/512x512/apps/com.prochamp.LinuxToolbox.png"
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=wayland",
+    "--socket=x11"
+  ],
+  "source-date-epoch" : 1784802335
+}

@@ -1,0 +1,30 @@
+{
+  "id" : "com.prochamp.LinuxToolbox",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "48",
+  "runtime-commit" : "0ebc10e5cc1fbe0836505fa203d75902606bcd4763c2c3cb0678795690dc506c",
+  "sdk" : "org.gnome.Sdk",
+  "sdk-commit" : "0fcaf52dcc423b664be691b4cba681c8de25849bbf231ca69da9e2b03605b42e",
+  "command" : "linux-toolbox",
+  "modules" : [
+    {
+      "name" : "linux-toolbox",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "../linux_toolbox.py",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm755 linux_toolbox.py /app/bin/linux-toolbox"
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--socket=x11",
+    "--socket=wayland",
+    "--share=ipc"
+  ],
+  "source-date-epoch" : 1784798744
+}
