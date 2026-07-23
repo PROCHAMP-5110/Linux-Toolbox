@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Linux Toolbox
+Comment=Your Linux command reference
+Exec=linux-toolbox
+Icon=com.prochamp.LinuxToolbox
+Terminal=false
+Type=Application
+Categories=Utility;System;
